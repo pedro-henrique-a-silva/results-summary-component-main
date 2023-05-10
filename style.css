@@ -1,0 +1,79 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: 'Hanken Grotesk', sans-serif;
+}
+
+main {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.result, .summary {
+  display: inline-block;
+}
+
+.result {
+  width: 300px;
+  height: 450px;
+  border-radius: 40px;
+  background-image: linear-gradient(to bottom, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+}
+
+.summary {
+  width: 300px;
+  height: 450px;
+  border: 1px solid green;
+}
+
+.title-result {
+  margin: 20px 0;
+  text-align: center;
+  font-size: 18px;
+  color: hsl(0, 0%, 85%);
+}
+
+.circle-summary {
+  position: relative;
+  margin: auto;
+  width: 150px;
+  text-align: center;
+  height: 150px;
+  border-radius: 50%;
+  color: hsl(0, 0%, 100%);
+  background-image: linear-gradient(to top, hsl(252, 100%, 67%, 0.5), hsl(241, 81%, 54%));
+}
+
+
+.circle-summary .circle-destak {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: 44px;
+  transform: translate(-50%, -50%);
+
+}
+
+.circle-summary .circle-no-destak {
+  position: absolute;
+  bottom: 15%;
+  left: 50%;
+  font-size: 15px;
+  color: hsl(0, 0%, 85%);
+  transform: translate(-50%);
+}
+
+.attribution { 
+  position: fixed;
+  bottom: 0;
+  font-size: 11px; text-align: center; 
+}
+
+.attribution a { 
+  color: hsl(228, 45%, 44%); 
+}
