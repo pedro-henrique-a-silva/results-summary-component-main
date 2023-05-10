@@ -5,32 +5,37 @@
 
 body {
   font-family: 'Hanken Grotesk', sans-serif;
+  overflow: scroll;
 }
 
 main {
   position: absolute;
+  width: 650px;
   top: 50%;
   left: 50%;
-  vertical-align: top;
+  padding: 1%;
   transform: translate(-50%, -50%);
+  /* border: 1px solid blue; */
 }
 
 .result, .summary {
   display: inline-block;
+  width: 45%; 
+  vertical-align: top; 
 }
 
 .result {
-  width: 300px;
-  padding: 50px 20px;
-  /* height: 450px; */
+  padding: 50px 10px;
   border-radius: 40px;
   text-align: center;
   background-image: linear-gradient(to bottom, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
 }
 
 .summary {
-  width: 300px;
-  border: 1px solid green;
+  padding-left: 30px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  /* border: 1px solid green; */
 }
 
 .title-result {
@@ -84,10 +89,56 @@ main {
   transform: translate(-50%);
 }
 
+.title-summary {
+  margin-bottom: 20px;
+  font-size: 18px;
+  font-weight: 700;
+  color: hsl(224, 30%, 27%);
+}
+
+.item {
+  display: inline-block;
+  width: 80%;
+  padding: 10px 5px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
+
+.reaction {
+  background-color: hsl(0, 100%, 67%, 0.2);  
+  color: hsl(0, 100%, 67%, 1);  
+}
+
+.memory {
+  background-color: hsl(39, 100%, 56%, 0.2);
+  color: hsl(39, 100%, 56%, 1);
+}
+
+.verbal {
+  background-color: hsl(166, 100%, 37%, 0.2);
+  color: hsl(166, 100%, 37%, 1);
+}
+
+.visual {
+  background-color: hsl(234, 85%, 45%, 0.2);
+  color: hsl(234, 85%, 45%, 1);
+}
+
+.summary-button {
+  color: white;
+  width: 80%;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 10px;
+  background-color: hsl(224, 30%, 27%);
+  border-radius: 30px;
+}
+
 .attribution { 
   position: fixed;
   bottom: 0;
   font-size: 11px; text-align: center; 
+  
 }
 
 .attribution a { 
