@@ -11,6 +11,7 @@ main {
   position: absolute;
   top: 50%;
   left: 50%;
+  vertical-align: top;
   transform: translate(-50%, -50%);
 }
 
@@ -20,22 +21,30 @@ main {
 
 .result {
   width: 300px;
-  height: 450px;
+  padding: 50px 20px;
+  /* height: 450px; */
   border-radius: 40px;
+  text-align: center;
   background-image: linear-gradient(to bottom, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
 }
 
 .summary {
   width: 300px;
-  height: 450px;
   border: 1px solid green;
 }
 
 .title-result {
-  margin: 20px 0;
+  margin-bottom: 20px;
   text-align: center;
   font-size: 18px;
   color: hsl(0, 0%, 85%);
+}
+
+.sub-title-result {
+  margin: 20px 0;
+  text-align: center;
+  font-size: 18px;
+  color: hsl(0, 0%, 100%);
 }
 
 .circle-summary {
@@ -47,6 +56,13 @@ main {
   border-radius: 50%;
   color: hsl(0, 0%, 100%);
   background-image: linear-gradient(to top, hsl(252, 100%, 67%, 0.5), hsl(241, 81%, 54%));
+}
+
+.summary-text {
+  display: inline-block;
+  width: 80%;
+  margin: auto;
+  color: hsl(0, 0%, 85%);
 }
 
 
