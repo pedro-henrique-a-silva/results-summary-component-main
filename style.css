@@ -97,11 +97,32 @@ main {
 }
 
 .item {
+  position: relative;
   display: inline-block;
   width: 80%;
   padding: 10px 5px;
+  font-size: 18px;
   margin-bottom: 20px;
   border-radius: 10px;
+}
+
+.item img {
+  width: 18px;
+  margin-left: 2px;
+  margin-right: 5px;
+  vertical-align: middle;
+}
+
+.tasks {
+  position: absolute;
+  right: 10px;
+  color: hsl(224, 30%, 27%);
+}
+
+.tasks span {
+  font-size: 17px;
+  margin-left: 5px;
+  color: rgba(109, 117, 138, 0.9);
 }
 
 .reaction {
